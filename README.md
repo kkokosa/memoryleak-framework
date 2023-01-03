@@ -1,4 +1,5 @@
-# Memory Management and Patterns in ASP.NET Core
+# Memory Management and Patterns in ASP.NET
+## (based on https://github.com/sebastienros/memoryleak for ASP.NET Core)
 
 Memory management is complex, even in a managed framework like .NET. Analyzing and understanding memory issues can be challenging.
 
