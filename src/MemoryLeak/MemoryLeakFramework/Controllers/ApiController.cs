@@ -38,6 +38,17 @@ namespace MemoryLeakFramework.Controllers
             return Ok(new String('x', 10 * 1024));
         }
 
+        [Route("api/test")]
+        public IHttpActionResult GetBigStringWithError()
+        {
+            try
+            {
+                throw new NotImplementedException("Wait for it!");
+            }
+            catch {}
+            return Ok(new String('x', 10 * 1024));
+        }
+
         [Route("api/loh/{size=85000}")]
         public int GetLOH(int size)
         {
